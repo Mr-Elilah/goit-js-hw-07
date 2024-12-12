@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+ul,
+li,
+h2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.back-link:hover,
+.back-link:focus {
+  color: #0056b3;
+  text-shadow: 0 0 5px #00000080;
+}
+
+.input,
+.login-form input,
+.task-3-input,
+.task-6-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  width: 360px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  box-shadow: 0 4px 6px #0000001a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:hover,
+.input:focus,
+.login-form input:hover,
+.login-form input:focus,
+.task-3-input:hover,
+.task-3-input:focus,
+.task-6-input:hover,
+.task-6-input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px #00000033;
+  border: 1px solid #000000;
+}
+
+.login-form button,
+.change-color,
+.create-button,
+.destroy-button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border: none;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-self: flex-start;
+}
+
+.button:hover,
+.button:focus,
+.login-form button:hover,
+.login-form button:focus,
+.change-color:hover,
+.change-color:focus,
+.create-button:hover,
+.create-button:focus {
+  background-color: #6c8cff;
+  transform: scale(1.05);
+}
+
+/* Task-1 */
+.categories-list {
+  padding-left: 50px;
+}
+
+.categories-list-item {
+  margin-bottom: 24px;
+}
+
+.first-page-titles {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.list-item {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+  box-shadow: 0 4px 6px #0000001a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-item:hover,
+.list-item:focus {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px #00000033;
+  border: 1px solid #000000;
+}
+
+/* Task-2 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 0 156px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 30px);
+  max-width: 400px;
+  box-shadow: 0 4px 6px #0000001a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Task-3 */
+
+.task-3-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* Task-4 */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px #0000001a;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  width: 360px;
+}
+
+/* Task-5 */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px #0000001a;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.change-color {
+  width: 148px;
+  height: 40px;
+  align-self: center;
+}
+
+/* Task-6 */
+
+.task-6-container,
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 24px;
+}
+
+.task-6-input {
+  max-width: 150px;
+}
+.create-button {
+  width: 120px;
+}
+
+.destroy-button {
+  width: 120px;
+  background-color: #ff4e4e;
+}
+
+.destroy-button:hover,
+.destroy-button:focus {
+  background-color: #ff7070;
+  transform: scale(1.05);
+}
