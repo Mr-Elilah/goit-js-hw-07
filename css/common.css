@@ -21,7 +21,8 @@ h2 {
   margin: 0;
 }
 
-.back-link {
+.back-link,
+.task-link {
   display: inline-block;
   text-decoration: none;
   color: #007bff;
@@ -34,6 +35,18 @@ h2 {
 .back-link:hover,
 .back-link:focus {
   color: #0056b3;
+  text-shadow: 0 0 5px #00000080;
+}
+
+.task-link {
+  color: #ff4e4e;
+  margin-bottom: 10px;
+  padding: 0 24px;
+}
+
+.task-link:hover,
+.task-link:focus {
+  color: #ff7070;
   text-shadow: 0 0 5px #00000080;
 }
 
