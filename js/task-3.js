@@ -1,15 +1,7 @@
-const nameInput = document.querySelector("#name-input");
-const nameOutput = document.querySelector("#name-output");
+const nameInput = document.getElementById("name-input");
+const nameOutput = document.getElementById("name-output");
 
-function updateName() {
-  const name = nameInput.value.trim();
-  nameOutput.textContent = name !== "" ? name : "Anonymous";
-}
-
-nameInput.addEventListener("blur", updateName);
-
-nameInput.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    updateName();
-  }
+nameInput.addEventListener("input", () => {
+  const inputValue = nameInput.value.trim();
+  nameOutput.textContent = inputValue || "Anonymous";
 });
